@@ -26,7 +26,7 @@ dist/
 docs/_build
 jnk/
 logs/
-/models/
+models/
 mongodb/
 node_modules/
 npm-debug.log
@@ -36,3 +36,5 @@ server/
 tmp/
 tokens.dat
 graph.png
+*virtualenv/*
+*/*/models/*

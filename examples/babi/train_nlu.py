@@ -21,8 +21,7 @@ def train_babi_nlu():
     training_data = load_data('examples/babi/data/franken_data.json')
     trainer = Trainer(RasaNLUConfig("examples/babi/data/config_nlu.json"))
     trainer.train(training_data)
-    model_directory = trainer.persist('examples/babi/models/nlu/',
-                                      model_name=model_name)
+    model_directory = trainer.persist('examples/babi/models/nlu/')
     return model_directory
 
 
