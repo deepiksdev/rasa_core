@@ -17,8 +17,12 @@ networkx==1.11
 pymessenger==0.0.7.0
 tqdm==4.11.2
 ConfigArgParse==0.12.0
+<<<<<<< HEAD
 rasa_nlu
 spacy
 sklearn
 sklearn_crfsuite
 
+=======
+pykwalify==1.6.0
+>>>>>>> 61f35c40cc63f49147a88afe8f520aae3ef5e85a

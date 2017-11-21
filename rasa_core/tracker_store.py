@@ -10,9 +10,6 @@ import six.moves.cPickle as pickler
 
 from rasa_core.actions.action import ACTION_LISTEN_NAME
 from rasa_core.trackers import DialogueStateTracker, ActionExecuted
-import redis
-import fakeredis
-
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +31,7 @@ class TrackerStore(object):
                                        self.domain.default_topic)
 
     def create_tracker(self, sender_id):
-        """Creates a new tracker for the sender.
+        """Creates a new tracker for the sender_id.
 
         The tracker is initially listening."""
 
@@ -86,9 +83,12 @@ class RedisTrackerStore(TrackerStore):
 
     def __init__(self, domain, mock=False, host='localhost',
                  port=6379, db=0, password=None):
+
         if mock:
+            import fakeredis
             self.red = fakeredis.FakeStrictRedis()
         else:  # pragma: no cover
+            import redis
             self.red = redis.StrictRedis(host=host, port=port, db=db,
                                          password=password)
         super(RedisTrackerStore, self).__init__(domain)

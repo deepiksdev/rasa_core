@@ -4,7 +4,21 @@
 [![Coverage Status](https://coveralls.io/repos/github/RasaHQ/rasa_core/badge.svg?branch=master)](https://coveralls.io/github/RasaHQ/rasa_core?branch=master)
 [![PyPI version](https://img.shields.io/pypi/v/rasa_core.svg)](https://pypi.python.org/pypi/rasa-core)
 
-### [Go To Docs](https://core.rasa.ai)
+## What do Rasa Core & NLU do? 🤔
+[Read About the Rasa Stack](http://rasa.ai/products/rasa-stack/)
+
+## I'd like to read the detailed docs 🤓
+[Read The Docs](https://core.rasa.ai)
+
+## I'm ready to install Rasa Core! 🚀
+[Installation](https://core.rasa.ai/installation.html)
+
+## I have a question ❓
+[Gitter channel](https://gitter.im/RasaHQ/rasa_core)
+
+## I would like to contribute 🤗
+[How to contribute](#how-to-contribute)
+
 
 ## Introduction
 
@@ -36,24 +50,19 @@ questions.
 
 
 #### README Contents:
-- [Setup](#setup) 
 - [How to contribute](#how-to-contribute)
 - [Development Internals](#development-internals)
 - [License](#license)
 
-## Setup
-There isn't a released pypi package yet. Hence, you need to clone and install 
-the package from the github repository. For a more detailed description, please 
-visit the [**Installation page**](https://core.rasa.ai/installation.html) 
-of the docs.
+### How to contribute
+We are very happy to receive and merge your contributions. There is some more information about the style of the code and docs in the [documentation](https://rasahq.github.io/rasa_nlu/contribute.html).
 
-If you want to install the latest master version from github, run:
-```bash
-git clone https://github.com/RasaHQ/rasa_core.git
-cd rasa_core
-pip install -r requirements.txt
-pip install -e .
-```
+In general the process is rather simple:
+1. create an issue describing the feature you want to work on (or have a look at issues with the label [help wanted](https://github.com/RasaHQ/rasa_core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22))
+2. write your code, tests and documentation
+3. create a pull request describing your changes
+
+You pull request will be reviewed by a maintainer, who might get back to you about any necessary changes or questions. You will also be asked to signa [Contributor License Agreement](https://cla-assistant.io/RasaHQ/rasa_core)
 
 
 ## Development Internals
@@ -76,6 +85,29 @@ You can now change the docs locally and the web page will automatically reload
 and apply your changes.
 
 ## License
-Licensed under the Apache License, Version 2.0. Copyright 2017 
-Rasa Technologies GmbH. [Copy of the license](LICENSE.txt).
+Licensed under the Apache License, Version 2.0. Copyright 2017 Rasa Technologies GmbH. [Copy of the license](LICENSE.txt).
+
+As a reference, the following contains a listing of the licenses of the different dependencies as of this writing. 
+Licenses of the dependencies:
+
+| required package | License              |
+|------------------|----------------------|
+| apscheduler      | MIT                  |
+| fakeredis        | BSD                  |
+| graphviz         | MIT                  |
+| typing           | PSF                  |
+| future           | MIT                  |
+| six              | MIT                  |
+| h5py             | BSD                  |
+| jsonpickle       | BSD                  |
+| keras            | MIT                  |
+| numpy            | BSD                  |
+| pandoc           | MIT                  |
+| redis            | MIT                  |
+| tensorflow       | Apache Licence 2.0   |
+| networkx         | BSD                  |
+| pymessenger      | MIT                  |
+| tqdm             | MIT                  |
+| ConfigArgParse   | MIT                  |
+
 
